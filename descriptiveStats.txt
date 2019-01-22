@@ -1,0 +1,5 @@
+
+> with(bw_vs_all, table(Host))
+Host
+  A_mearnsii  Am_adjacent A_sieberiana
+         208           60           43 
