@@ -1,5 +1,9 @@
+> with(bw_vs_adjacent_all, table(Host))
+Host
+           A_mearnsii          A_sieberiana A_mearnsii (adjacent)
+                  208                    43                    60
 
 > with(bw_vs_all, table(Host))
 Host
-  A_mearnsii  Am_adjacent A_sieberiana
-         208           60           43 
+          A_mearnsii A_sieberiana
+                           268           43         
