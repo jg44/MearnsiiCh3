@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "library(vegan)\nbw_vs.permanova <- bw_vs_all_expanded[rowSums(bw_vs_all_expanded[,6:length(bw_vs_all_expanded)]) > 0,]\n\nbw_vs.permanova.result <- adonis( bw_vs.permanova[, 6:length(bw_vs.permanova) ] ~ Host * Site * Region * Season, bw_vs.permanova, permutations = 999, method = \"bray\")\n\n### Host*Region*Site*Season\nbw_vs.permanova.result2 <- adonis( bw_vs.permanova[, 6:length(bw_vs.permanova) ] ~ Host * Region * Site * Season, bw_vs.permanova, permutations = 999, method = \"bray\")\n\n\n### *Region*Site*Host*Season\n> bw_vs.permanova.resultfinal <- adonis( bw_vs.permanova[, 6:length(bw_vs.permanova) ] ~ Region * Site * Host * Season, bw_vs.permanova, permutations = 999, method = \"bray\")\n> bw_vs.permanova.resultfinal",
+    "created" : 1473185674569.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "828568663",
+    "id" : "CB119619",
+    "lastKnownWriteTime" : 1457423253,
+    "last_content_update" : 1457423253,
+    "path" : "~/Desktop/Acacia data/Acacia.Permanova.R",
+    "project_path" : "Acacia.Permanova.R",
+    "properties" : {
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

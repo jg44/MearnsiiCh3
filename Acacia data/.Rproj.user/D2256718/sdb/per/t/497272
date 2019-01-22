@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "library(vegetarian)\n\n###beta diversity overall\nd(bw_vs, lev = \"beta\", wts = FALSE, q = 0, boot = TRUE)\nd(bw_vs, lev = \"beta\", wts = FALSE, q = 1, boot = TRUE)\nd(bw_vs, lev = \"beta\", wts = FALSE, q = 2, boot = TRUE)\n\n####beta diversity by host q=0,1,2\n\n#bw\nd(bw, lev = \"beta\", wts = FALSE, q = 0, boot = TRUE)\nd(bw, lev = \"beta\", wts = FALSE, q = 1, boot = TRUE)\nd(bw, lev = \"beta\", wts = FALSE, q = 2, boot = TRUE)\n#bw adjacent\nd(bw_adjacent, lev = \"beta\", wts = FALSE, q = 0, boot = TRUE)\nd(bw_adjacent, lev = \"beta\", wts = FALSE, q = 1, boot = TRUE)\nd(bw_adjacent, lev = \"beta\", wts = FALSE, q = 2, boot = TRUE)\n#vs\nd(vs, lev = \"beta\", wts = FALSE, q = 0, boot = TRUE)\nd(vs, lev = \"beta\", wts = FALSE, q = 1, boot = TRUE)\nd(vs, lev = \"beta\", wts = FALSE, q = 2, boot = TRUE)\n\n\n\n\n#####beta diversity by region q=0,1,2\n#KZN\nd(bw_vs.KZN, lev = \"beta\", wts = FALSE, q = 0, boot = TRUE)\nd(bw_vs.KZN, lev = \"beta\", wts = FALSE, q = 1, boot = TRUE)\nd(bw_vs.KZN, lev = \"beta\", wts = FALSE, q = 2, boot = TRUE)\n\n#MP\nd(bw_vs.MP, lev = \"beta\", wts = FALSE, q = 0, boot = TRUE)\nd(bw_vs.MP, lev = \"beta\", wts = FALSE, q = 1, boot = TRUE)\nd(bw_vs.MP, lev = \"beta\", wts = FALSE, q = 2, boot = TRUE)\n\n\n\n######beta diversity by host and region q=0,1,2\n#bw\nd(bw.MP, lev = \"beta\", wts = FALSE, q = 0, boot = TRUE)\nd(bw.MP, lev = \"beta\", wts = FALSE, q = 1, boot = TRUE)\nd(bw.MP, lev = \"beta\", wts = FALSE, q = 2, boot = TRUE)\n\nd(bw.KZN, lev = \"beta\", wts = FALSE, q = 0, boot = TRUE)\nd(bw.KZN, lev = \"beta\", wts = FALSE, q = 1, boot = TRUE)\nd(bw.KZN, lev = \"beta\", wts = FALSE, q = 2, boot = TRUE)\n\n#vs q=0,1,2 MISSING\nd(vs.MP, lev = \"beta\", wts = FALSE, q = 0, boot = TRUE)\nd(vs.MP, lev = \"beta\", wts = FALSE, q = 1, boot = TRUE)\nd(vs.MP, lev = \"beta\", wts = FALSE, q = 2, boot = TRUE)\n\nd(vs.KZN, lev = \"beta\", wts = FALSE, q = 0, boot = TRUE)\nd(vs.KZN, lev = \"beta\", wts = FALSE, q = 1, boot = TRUE)\nd(vs.KZN, lev = \"beta\", wts = FALSE, q = 2, boot = TRUE)\n\n#bw adjacent a=0,1,2 MISSING\nd(bw_adjacent.MP, lev = \"beta\", wts = FALSE, q = 0, boot = TRUE)\nd(bw_adjacent.MP, lev = \"beta\", wts = FALSE, q = 1, boot = TRUE)\nd(bw_adjacent.MP, lev = \"beta\", wts = FALSE, q = 2, boot = TRUE)\n\nd(bw_adjacent.KZN, lev = \"beta\", wts = FALSE, q = 0, boot = TRUE)\nd(bw_adjacent.KZN, lev = \"beta\", wts = FALSE, q = 1, boot = TRUE)\nd(bw_adjacent.KZN, lev = \"beta\", wts = FALSE, q = 2, boot = TRUE)",
+    "created" : 1472468568966.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1779595735",
+    "id" : "497272",
+    "lastKnownWriteTime" : 1472596478,
+    "last_content_update" : 1472596478353,
+    "path" : "~/Desktop/Acacia data/beta diversity.R",
+    "project_path" : "beta diversity.R",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

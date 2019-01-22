@@ -1,0 +1,5 @@
+library(pvclust)
+result <- pvclust(t(bw_vs), method.dist="cor", method.hclust="average", nboot=5000)
+plot(result)
+pvrect(result, alpha=0.95, max.only = FALSE)
+seplot(result)

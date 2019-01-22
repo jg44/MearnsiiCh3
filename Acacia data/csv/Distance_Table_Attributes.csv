@@ -1,0 +1,91 @@
+Site Number,Landcover,Perimeter_Area_ratio,Distance
+KZN1,Grassland,545.49,0
+KZN1,Indigenous Forest,290.69,1089.14
+KZN1,Low shrubland,1127.92,222.77
+KZN1,Thicket /Dense bush,419.86,40.99
+KZN1,Water seasonal,1333.33,4182.95
+KZN1,Wetlands,637.32,680.5
+KZN1,Woodlan/Open bush,1254.52,177.63
+KZN2,Grassland,220.79,127.27
+KZN2,Indigenous Forest,695.47,2004.57
+KZN2,Low shrubland,1148.86,547.76
+KZN2,Thicket /Dense bush,368.14,414.97
+KZN2,Water seasonal,1322.58,2118.14
+KZN2,Wetlands,353.79,682.59
+KZN2,Woodlan/Open bush,1102.81,55.43
+KZN3,Grassland,225.47,12.03
+KZN3,Indigenous Forest,875.52,3578.79
+KZN3,Low shrubland,1062.79,1090.8
+KZN3,Thicket /Dense bush,329.38,22.5
+KZN3,Water seasonal,1196.33,1444.58
+KZN3,Wetlands,358.03,38.6
+KZN3,Woodlan/Open bush,1020.63,495.88
+KZN4,Grassland,226.8,34.43
+KZN4,Indigenous Forest,155.85,507.25
+KZN4,Low shrubland,1230.86,2400.56
+KZN4,Thicket /Dense bush,402.8,130.33
+KZN4,Water seasonal,1333.33,3986.01
+KZN4,Wetlands,503.56,216.56
+KZN4,Woodlan/Open bush,1329.92,31.77
+KZN5,Grassland,227.67,83.53
+KZN5,Low shrubland,928.42,1954.07
+KZN5,Thicket /Dense bush,475.96,10
+KZN5,Water seasonal,1304.3,1902.73
+KZN5,Wetlands,442.82,457.31
+KZN5,Woodlan/Open bush,1126.84,372.22
+KZN6,Grassland,136.66,51.72
+KZN6,Indigenous Forest,1022.84,1642.63
+KZN6,Low shrubland,931.93,1751.69
+KZN6,Thicket /Dense bush,479.83,78.42
+KZN6,Water seasonal,1397.84,898.31
+KZN6,Wetlands,492.03,870.31
+KZN6,Woodlan/Open bush,1281.67,257.18
+KZN7,Grassland,571.41,63.64
+KZN7,Indigenous Forest,267.08,613.9
+KZN7,Low shrubland,1115.74,704.1
+KZN7,Thicket /Dense bush,430.39,342.54
+KZN7,Water seasonal,1200,4305.97
+KZN7,Wetlands,687.89,101.14
+KZN7,Woodlan/Open bush,1240.14,141.71
+MP1,Grassland,277.93,163.18
+MP1,Indigenous Forest,842.05,2308.15
+MP1,Low shrubland,537.17,1357.89
+MP1,Thicket /Dense bush,206.41,914.21
+MP1,Water seasonal,1382.79,3045.26
+MP1,Wetlands,938.49,949.96
+MP1,Woodlan/Open bush,452.24,151.14
+MP2,Grassland,285.12,111.36
+MP2,Low shrubland,832.55,1861.48
+MP2,Thicket /Dense bush,310.1,319.81
+MP2,Water seasonal,1418.68,2235.55
+MP2,Wetlands,595.16,2236.72
+MP2,Woodlan/Open bush,490.08,71.44
+MP3,Grassland,241.33,62.06
+MP3,Low shrubland,745.52,831.27
+MP3,Thicket /Dense bush,194.92,0
+MP3,Water seasonal,1333.33,2845.45
+MP3,Wetlands,621.9,1872.59
+MP3,Woodlan/Open bush,394.36,54.25
+MP4,Grassland,193.05,61.86
+MP4,Low shrubland,695.65,2314.71
+MP4,Thicket /Dense bush,173.35,68.54
+MP4,Wetlands,544.03,1753.83
+MP4,Woodlan/Open bush,407.71,109.45
+MP5,Grassland,203.02,388.65
+MP5,Low shrubland,655.01,2231
+MP5,Thicket /Dense bush,209.46,559.43
+MP5,Wetlands,546.87,1246.95
+MP5,Woodlan/Open bush,397.24,165.35
+MP6,Grassland,244.14,21.99
+MP6,Indigenous Forest,1333.33,3327.13
+MP6,Low shrubland,1242.66,1910.8
+MP6,Thicket /Dense bush,367.98,874.4
+MP6,Water seasonal,1333.33,4442.23
+MP6,Wetlands,598.71,1016.38
+MP6,Woodlan/Open bush,521.08,30.54
+MP7,Grassland,151.78,4.79
+MP7,Low shrubland,1335.38,3349.14
+MP7,Thicket /Dense bush,386.64,772.05
+MP7,Water seasonal,1219.91,3595.69
+MP7,Wetlands,532.32,1292.55
+MP7,Woodlan/Open bush,693.69,140.38

@@ -1,0 +1,12 @@
+{
+    "dialog-state" : {
+        "caseSensitive" : false,
+        "filePatterns" : [
+            "*.r",
+            "*.R"
+        ],
+        "path" : "C:/Users/jrg1035/Box Sync/Students_postdocsFABI/Sarai",
+        "query" : "bw_vs_all",
+        "regex" : false
+    }
+}

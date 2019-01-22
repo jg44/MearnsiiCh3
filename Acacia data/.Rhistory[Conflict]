@@ -1,0 +1,512 @@
+ordiplot(bw_vs.host_site_season.NMDS, type="n")
+orditorp(bw_vs.host_site_season.NMDS, display="sites", air=0.01, label=FALSE, cex=2,
+pch = c("Am" = 16, "Vs" = 17)[substr(rownames(bw_vs.host_site_season), 1, 2)])
+ordihull(bw_vs.host_site_season.NMDS, substr(rownames(bw_vs.host_site_season), 1, 2))
+rownames(bw_vs.host_site_season)
+substr(rownames(bw_vs.host_site_season), 4, 2)
+substr(rownames(bw_vs.host_site_season), 4, 6)
+substr(rownames(bw_vs.host_site_season), 4, 5)
+ordiplot(bw_vs.host_site_season.NMDS, type="n")
+ordihull(bw_vs.host_site_season.NMDS, substr(rownames(bw_vs.host_site_season), 4, 5))
+orditorp(bw_vs.host_site_season.NMDS, display="sites", air=0.01, label=FALSE, cex=2,
+pch = c("Am" = 16, "Vs" = 17)[substr(rownames(bw_vs.host_site_season), 1, 2)])
+ordiplot(bw_vs.host_site_season.NMDS, type="n")
+ordihull(bw_vs.host_site_season.NMDS, substr(rownames(bw_vs.host_site_season), 4, 5))
+orditorp(bw_vs.host_site_season.NMDS, display="sites", air=0.01, label=FALSE, cex=2,
+pch = c("Am" = 16, "Vs" = 17)[substr(rownames(bw_vs.host_site_season), 1, 2)])
+orditorp(bw_vs.host_site_season.NMDS, display="sites", air=0.01, cex=1)
+ordiplot(bw_vs.host_site_season.NMDS, type="n")
+ordihull(bw_vs.host_site_season.NMDS, substr(rownames(bw_vs.host_site_season), 4, 5), draw = "polygon")
+ordiplot(bw_vs.host_site_season.NMDS, type="n")
+ordihull(bw_vs.host_site_season.NMDS, substr(rownames(bw_vs.host_site_season), 4, 5), draw="polygon", col="#D3EAF1", show.groups = "KZ", label=FALSE)
+ordihull(bw_vs.host_site_season.NMDS, substr(rownames(bw_vs.host_site_season), 4, 5), draw="polygon", col="#CEE9BF", show.groups = "MP", label=FALSE)
+orditorp(bw_vs.host_site_season.NMDS, display="sites", air=0.01, label=FALSE, cex=2,
+pch = c("Am" = 16, "Vs" = 17)[substr(rownames(bw_vs.host_site_season), 1, 2)])
+orditorp(bw_vs.host_site_season.NMDS, display="sites", air=0.01, cex=1)
+pdf("Output/BW_VS NMDS Host Site Season.pdf", width = 16, height = 16, useDingbats = F)
+ordiplot(bw_vs.host_site_season.NMDS, type="n")
+orditorp(bw_vs.host_site_season.NMDS, display="species",air=0.01, label=FALSE, pch=c( rep(3, bw_vs.ant_colmns[1] - 1), rep(19, length(bw_vs.ant_colmns)), rep(2, length(names(bw_vs.host_site_season)) - max(bw_vs.ant_colmns)) ))
+orditorp(bw_vs.host_site_season.NMDS, display="sites", air=0.01, cex=1)
+ordiplot(bw_vs.host_site_season.NMDS, type="n")
+orditorp(bw_vs.host_site_season.NMDS, display="sites", air=0.01, cex=1)
+ordiplot(bw_vs.host_site_season.NMDS, type="n")
+ordihull(bw_vs.host_site_season.NMDS, substr(rownames(bw_vs.host_site_season), 4, 5), draw="polygon", col="#D3EAF1", show.groups = "KZ", label=FALSE)
+ordihull(bw_vs.host_site_season.NMDS, substr(rownames(bw_vs.host_site_season), 4, 5), draw="polygon", col="#CEE9BF", show.groups = "MP", label=FALSE)
+orditorp(bw_vs.host_site_season.NMDS, display="sites", air=0.01, label=FALSE, cex=2,
+pch = c("Am" = 16, "Vs" = 17)[substr(rownames(bw_vs.host_site_season), 1, 2)])
+orditorp(bw_vs.host_site_season.NMDS, display="sites", air=0.01, cex=1)
+dev.off()
+substr(rownames(bw_vs.host_site_season), 1, 2)
+rownames(bw_vs.host_site_season)
+nchar(rownames(bw_vs.host_site_season)[49]()
+nchar(rownames(bw_vs.host_site_season)[49])
+nchar(rownames(bw_vs.host_site_season)[50])
+rownames(bw_vs.host_site_season)[50]
+rownames(bw_vs.host_site_season)[50][1:2]
+library(vegan)
+?cca
+bw_vs.host_site_season.CCA <- cca(sqrt(bw_vs.host_site_season))
+bw_vs.host_site_season.CCA
+plot(bw_vs.host_site_season.CCA)
+plot(bw_vs.host_site_season.CCA, display = "sites")
+pdf("Output/bw_vs_CCA.pdf", width=12, height=7, useDingbats = F)
+pdf("Output/bw_vs.host_site_season.CCA.pdf", width=12, height=7, useDingbats = F)
+ggiNEXT(bw_vs_region_host.iNEXT, type=1, facet.var="order") + labs(x="Number of trees") + theme_bw(base_size = 18) + xlim(0, 200)
+library(iNEXT)
+library(ggplot2)
+library(grid)
+library(gridExtra)
+ggiNEXT(bw_vs_region_host.iNEXT, type=1, facet.var="order") + labs(x="Number of trees") + theme_bw(base_size = 18) + xlim(0, 200)
+ggiNEXT(bw_vs_region_host.iNEXT, type=1, facet.var="order") + labs(x="Number of trees") + theme_bw(base_size = 18) + xlim(0, 150)
+pdf("Output/BW_VS Rarefaction By Host Region.pdf", width = 20, height = 7, useDingbats = F)
+ggiNEXT(bw_vs_region_host.iNEXT, type=1, facet.var="order") + labs(x="Number of trees") + theme_bw(base_size = 18) + xlim(0, 150)
+dev.off()
+pdf("Output/BW_VS Rarefaction By Host Region.pdf", width = 20, height = 7, useDingbats = F)
+ggiNEXT(bw_vs_region_host.iNEXT, type=1, facet.var="order") + labs(x="Number of trees") + theme_bw(base_size = 18)
+ggiNEXT(bw_vs_region_host.iNEXT, type=1, facet.var="order") + labs(x="Number of trees") + theme_bw(base_size = 18) + xlim(0, 150)
+dev.off()
+acacia.env.pca250
+library(vegan)
+averageColumnsBySeasons <- function(x) {
+categories <- unique(unlist(lapply(strsplit(names(x)[grepl("_(Dec|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov)", names(x))], "\\_"), "[[", 1)))
+for (c in categories) {
+x[,paste(c, "summer", sep="_")] <- rowMeans(x[, grep(paste(c, "(Dec|Jan|Feb)", sep="_"), names(x))])
+x[,paste(c, "autumn", sep="_")] <- rowMeans(x[, grep(paste(c, "(Mar|Apr|May)", sep="_"), names(x))])
+x[,paste(c, "winter", sep="_")] <- rowMeans(x[, grep(paste(c, "(Jun|Jul|Aug)", sep="_"), names(x))])
+x[,paste(c, "spring", sep="_")] <- rowMeans(x[, grep(paste(c, "(Sep|Oct|Nov)", sep="_"), names(x))])
+}
+subset(x, select=-grep("(Dec|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov)", names(x)))
+}
+acacia.env <- read.csv("Acacia_env/Acacia.env.csv", row.names=1, stringsAsFactors = F)
+acacia.env <- averageColumnsBySeasons(acacia.env)
+categoriseLandUse <- function (x, allCategory, categories) {
+x$landuse <- as.character(x$landuse)
+#default category
+x$category <- allCategory
+#map each category using grep
+for (i in ls(categories))
+x$category[grep(categories[[i]],x$landuse)] <- i
+x
+}
+getPrincipalComponents <- function(x) {
+#sums across new categories
+x.agg<-aggregate(Prop ~ ., data=x[,-c(2:3)], sum)
+#reshapes
+x.wide <- reshape(x.agg, v.names = "Prop", idvar = "site",
+timevar = "category", direction = "wide")
+#NA's to zeros
+x.wide[is.na(x.wide)] <- 0
+#sites become rownames
+rownames(x.wide) <- x.wide$site
+x.wide <- subset(x.wide, select=-site)
+# PCA
+x.prco <- princomp(x.wide)
+x.axes_variance <- x.prco$sdev ^ 2
+round(x.axes_variance/sum(x.axes_variance),3) #prints the proportional variance for each
+round(x.axes_variance/sum(x.axes_variance),3)[1:3] #prints the proportional variance for first three axes
+x.firstthreeaxes<-x.prco$scores[,1:3]
+x.firstthreeaxes
+}
+acacia.landuse.250 <- categoriseLandUse(
+read.csv("landuse_acacia/acacia_250m.csv"),
+"Natural",
+list(
+"Cultivated" = "Cultivated",
+"Plantation" = "Plantation",
+"Urban" = "Urban|Bare none vegetated|Mine"
+)
+)
+acacia.landuse.500 <- categoriseLandUse(
+read.csv("landuse_acacia/acacia_500m.csv"),
+"Natural",
+list(
+"Cultivated" = "Cultivated",
+"Plantation" = "Plantation",
+"Urban" = "Urban|Bare none vegetated|Mine"
+)
+)
+acacia.env.pca250 <- getPrincipalComponents(acacia.landuse.250)
+acacia.env.pca500 <- getPrincipalComponents(acacia.landuse.500)
+acacia.env.250 <- merge(acacia.env, acacia.env.pca250, by=0, all=TRUE)
+rownames(acacia.env.250) <- acacia.env.250[,1]
+acacia.env.250 <- acacia.env.250[2:length(acacia.env.250)]
+acacia.env.500 <- merge(acacia.env, acacia.env.pca500, by=0, all=TRUE)
+rownames(acacia.env.500) <- acacia.env.500[,1]
+acacia.env.500 <- acacia.env.500[2:length(acacia.env.500)]
+acacia.env.trans250 <- read.csv("landuse_acacia/acacia_trans_250m.csv")
+acacia.env.250 <- cbind(acacia.env.250, trans_250 = acacia.env.trans250[acacia.env.trans250$transformed_land == "Transformed", ]$Prop)
+acacia.env.trans500 <- read.csv("landuse_acacia/acacia_trans_500m.csv")
+acacia.env.500 <- cbind(acacia.env.500, trans_500 = acacia.env.trans500[acacia.env.trans500$transformed_land == "Transformed", ]$Prop)
+write.csv(acacia.env.250, "Acacia_env/acacia.env.final.250.csv")
+bw.NMDS
+bw.CCA
+bw_vs_all_expanded
+View(bw_vs_all_expanded)
+if (!("data.table" %in% row.names(installed.packages()))) install.packages("data.table")
+library(data.table)
+library(vegan)
+dat<-data.table(bw_vs_all_expanded[,1:6])
+View(dat)
+datcomm<-data.table(bw_vs_all_expanded[,-(1:6)])
+dat[, host1:=Host]
+View(datcomm)
+sitesandseasonsmixed<-data.table(table(dat[, .(Host, Site, Season)]))[Host=="A_sieberiana" & N>0, .(Site, Season)]
+#dat[paste(Site, Season) %in% with(sitesandseasonsmixed,paste(Site, Season)), .(Site, Season, host1, Host)]
+View(sitesandseasonsmixed)
+dat[paste(Site, Season) %in% with(sitesandseasonsmixed,paste(Site, Season)), host1:=paste0(Host, "_adj")]
+dat$host1<-as.factor(as.character(dat$host1))
+table(dat$host1)
+comb<-data.table(dat, datcomm)
+comb[, Host:=NULL]
+comb[, Sample:=NULL]
+## Pool insects at the site level (sitedat)
+sitedat <- comb[, lapply(.SD, sum), by=list(Site, Region, Season, host1)]
+View(sitedat)
+## Select only sites that have both species (sitedat.paired)
+ss.concat<-with(sitesandseasonsmixed, paste0(Site, Season))
+sitedat.paired<-sitedat[paste0(Site, Season) %in% ss.concat]
+```
+# permanova (adonis) functions
+## Adonis using site level data and all sites
+```{r}
+adonis((sitedat[,-(1:4), with=FALSE]^.25)~Region*Season*host1,  data=sitedat, strata=sitedat$Season)
+library(vegan)
+bw_vs.permanova <- bw_vs_all_expanded[rowSums(bw_vs_all_expanded[,6:length(bw_vs_all_expanded)]) > 0,]
+bw_vs.permanova.result <- adonis( bw_vs.permanova[, 6:length(bw_vs.permanova) ] ~ Host * Site * Region * Season, bw_vs.permanova, permutations = 999, method = "bray")
+bw_vs.permanova.result
+View(bw_vs_all_expanded)
+library(data.table)
+library(vegan)
+data.table(bw_vs_all_expanded[,1:6])
+data.table(bw_vs_all_expanded[,-(1:6)])
+View(data.table(bw_vs_all_expanded[,-(1:6)]))
+dat<-data.table(bw_vs_all_expanded[,1:5])
+datcomm<-data.table(bw_vs_all_expanded[,-(1:5)])
+dat[, host1:=Host]
+dat
+sitesandseasonsmixed<-data.table(table(dat[, .(Host, Site, Season)]))[Host=="A_sieberiana" & N>0, .(Site, Season)]
+View(sitesandseasonsmixed)
+.(Host, Site, Season)
+dat[, .(Host, Site, Season)]
+table(dat[, .(Host, Site, Season)])
+View(dat)
+View(table(dat[, .(Host, Site, Season)]))
+View(dat)
+View(dat)
+View(data.table(table(dat[, .(Host, Site, Season)])))
+View(sitesandseasonsmixed)
+View(data.table(table(dat[, .(Host, Site, Season)])))
+View(data.table(table(dat[, .(Host, Site, Season)]))[Host=="A_sieberiana" & N>0, ])
+dat[paste(Site, Season) %in% with(sitesandseasonsmixed,paste(Site, Season)), host1:=paste0(Host, "_adj")]
+View(dat)
+dat$host1<-as.factor(as.character(dat$host1))
+table(dat$host1)
+View(dat)
+comb<-data.table(dat, datcomm)
+View(comb)
+dat<-data.table(bw_vs_all_expanded[,1:6])
+datcomm<-data.table(bw_vs_all_expanded[,-(1:6)])
+dat[, host1:=Host]
+sitesandseasonsmixed<-data.table(table(dat[, .(Host, Site, Season)]))[Host=="A_sieberiana" & N>0, .(Site, Season)]
+#dat[paste(Site, Season) %in% with(sitesandseasonsmixed,paste(Site, Season)), .(Site, Season, host1, Host)]
+dat[paste(Site, Season) %in% with(sitesandseasonsmixed,paste(Site, Season)), host1:=paste0(Host, "_adj")]
+dat$host1<-as.factor(as.character(dat$host1))
+table(dat$host1)
+comb<-data.table(dat, datcomm)
+View(comb)
+dat<-data.table(bw_vs_all_expanded[,1:5])
+datcomm<-data.table(bw_vs_all_expanded[,-(1:5)])
+dat[, host1:=Host]
+sitesandseasonsmixed<-data.table(table(dat[, .(Host, Site, Season)]))[Host=="A_sieberiana" & N>0, .(Site, Season)]
+#dat[paste(Site, Season) %in% with(sitesandseasonsmixed,paste(Site, Season)), .(Site, Season, host1, Host)]
+dat[paste(Site, Season) %in% with(sitesandseasonsmixed,paste(Site, Season)), host1:=paste0(Host, "_adj")]
+dat$host1<-as.factor(as.character(dat$host1))
+table(dat$host1)
+comb<-data.table(dat, datcomm)
+View(comb)
+comb[, Host:=NULL]
+comb[, Sample:=NULL]
+View(comb)
+View(comb)
+sitedat <- comb[, lapply(.SD, sum), by=list(Site, Region, Season, host1)]
+View(sitedat)
+View(comb)
+View(comb)
+sitedat <- comb[, lapply(.SD, sum), by=list(Site, Region, Season, host1)]
+View(sitedat)
+with(sitesandseasonsmixed, paste0(Site, Season))
+ss.concat<-with(sitesandseasonsmixed, paste0(Site, Season))
+ss.concat<-with(sitesandseasonsmixed, paste0(Site, Season))
+sitedat.paired<-sitedat[paste0(Site, Season) %in% ss.concat]
+View(sitedat.paired)
+View(sitedat)
+View(sitedat)
+View(sitedat)
+View(sitedat)
+View(sitedat.paired)
+library("vegetarian", lib.loc="~/Library/R/3.2/library")
+citation("vegetarian")
+View(acacia.env.pca250)
+View(acacia.landuse.250)
+aggregate(Prop ~ ., data=acacia.landuse.250[,-c(2:3)], sum)
+View(acacia.landuse.250)
+reshape(aggregate(Prop ~ ., data=acacia.landuse.250[,-c(2:3)], sum), v.names = "Prop", idvar = "site",
+timevar = "category", direction = "wide")
+?princomp
+library(vegan)
+?princomp
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents <- function(x) {
+#sums across new categories
+x.agg<-aggregate(Prop ~ ., data=x[,-c(2:3)], sum)
+#reshapes
+x.wide <- reshape(x.agg, v.names = "Prop", idvar = "site",
+timevar = "category", direction = "wide")
+#NA's to zeros
+x.wide[is.na(x.wide)] <- 0
+#sites become rownames
+rownames(x.wide) <- x.wide$site
+x.wide <- subset(x.wide, select=-site)
+# PCA
+x.prco <- princomp(x.wide)
+x.axes_variance <- x.prco$sdev ^ 2
+print(round(x.axes_variance/sum(x.axes_variance),3)) #prints the proportional variance for each
+print(round(x.axes_variance/sum(x.axes_variance),3)[1:3]) #prints the proportional variance for first three axes
+x.firstthreeaxes<-x.prco$scores[,1:3]
+x.firstthreeaxes
+}
+acacia.env.pca250 <- getPrincipalComponents(acacia.landuse.250)
+getPrincipalComponents <- function(x) {
+#sums across new categories
+x.agg<-aggregate(Prop ~ ., data=x[,-c(2:3)], sum)
+#reshapes
+x.wide <- reshape(x.agg, v.names = "Prop", idvar = "site",
+timevar = "category", direction = "wide")
+#NA's to zeros
+x.wide[is.na(x.wide)] <- 0
+#sites become rownames
+rownames(x.wide) <- x.wide$site
+x.wide <- subset(x.wide, select=-site)
+# PCA
+x.prco <- princomp(x.wide)
+x.axes_variance <- x.prco$sdev ^ 2
+# print(round(x.axes_variance/sum(x.axes_variance),3)) #prints the proportional variance for each
+print(round(x.axes_variance/sum(x.axes_variance),3)[1:3]) #prints the proportional variance for first three axes
+x.firstthreeaxes<-x.prco$scores[,1:3]
+x.firstthreeaxes
+}
+acacia.env.pca250 <- getPrincipalComponents(acacia.landuse.250)
+acacia.env.pca500 <- getPrincipalComponents(acacia.landuse.500)
+bw_vs.NMDS
+bw.NMDS
+bw.envfit_NMDS <- envfit(bw.NMDS, env=acacia.env.all)
+library(vegan)
+bw.envfit_NMDS <- envfit(bw.NMDS, env=acacia.env.all)
+bw.envfit_NMDS
+data.frame(
+bw.envfit_NMDS$vectors[[1]],
+r2 = round(bw.envfit_NMDS$vectors$r, 3),
+pval = bw.envfit_NMDS$vectors$pval
+)[
+order(bw.envfit_NMDS$vectors$r, decreasing=TRUE),
+]
+library("vegan", lib.loc="/Library/Frameworks/R.framework/Versions/3.2/Resources/library")
+?specpool
+.calculateAbundanceSpecpoolByHost("V. sieberiana", "A_sieberiana")
+?specpool
+.calculateAbundanceSpecpool(subset(bw_vs_adjacent, grepl("A_mearnsii", Host)))
+specpool(subset(aggregate(. ~ Site, subset(subset(bw_vs_adjacent, grepl("A_mearnsii", Host)), select = -c(Host, Season)), sum), select = -c(Site)))
+specaccum(subset(aggregate(. ~ Site, subset(subset(bw_vs_adjacent, grepl("A_mearnsii", Host)), select = -c(Host, Season)), sum), select = -c(Site)))
+plot(specaccum(subset(aggregate(. ~ Site, subset(subset(bw_vs_adjacent, grepl("A_mearnsii", Host)), select = -c(Host, Season)), sum), select = -c(Site))))
+plot(specaccum(subset(aggregate(. ~ Site, subset(subset(bw_vs_adjacent, grepl("A_mearnsii", Host)), select = -c(Host, Season)), sum), select = -c(Site))), ci.type = "poly")
+plot(specaccum(subset(aggregate(. ~ Site, subset(subset(bw_vs_adjacent, grepl("A_mearnsii", Host)), select = -c(Host, Season)), sum), select = -c(Site))), ci.type = "bar")
+plot(specaccum(subset(aggregate(. ~ Site, subset(subset(bw_vs_adjacent, grepl("A_mearnsii", Host)), select = -c(Host, Season)), sum), select = -c(Site))), ci.type = "line")
+plot(specaccum(subset(aggregate(. ~ Site, subset(subset(bw_vs_adjacent, grepl("A_mearnsii", Host)), select = -c(Host, Season)), sum), select = -c(Site))), ci.type = "bar")
+plot(specaccum(subset(aggregate(. ~ Site, subset(subset(bw_vs_adjacent, grepl("A_mearnsii", Host)), select = -c(Host, Season)), sum), select = -c(Site))), ci.type = "polygon")
+library(vegetarian)
+###beta diversity overall
+d(bw_vs, lev = "beta", wts = FALSE, q = 0, boot = TRUE)
+library(vegan)
+bw_vs
+betadiv_bw_vs <- betadiver(bw_vs)
+plot(betadiv_bw_vs)
+## The indices
+betadiver(help=TRUE)
+## The basic Whittaker index
+bdiv_bw_vs <- betadiver(bw_vs, "w")
+View(bw_vs_all)
+View(bw_vs)
+setwd("~/Desktop")
+D <- data.frame(c(5,10,15), c(M,F,M))
+D <- data.frame(c(5,10,15), c(T,F,T))
+names(D) <- c("age", "female")
+D
+D$age
+read.csv(guilds.csv)
+setwd("~/Desktop")
+guilds <-read.table("guilds.csv")
+guilds <-read.table("guilds.csv",header=TRUE, sep=";", dec=".")
+guilds
+View(guilds)
+setwd("~/Desktop")
+guilds <- read.csv("guilds.csv")
+View(guilds)
+attach(guilds)
+head(guilds)
+nrow(guilds)
+Ncol(guilds)
+ncol(guilds)
+guilds[,2]
+guild[,"chewer"]
+guilds[,"chewer"]
+guilds[,4:10]
+guilds[7, ]
+guilds[guilds$chewer > 1]
+guilds[guilds$chewer.1 > 1]
+data[,2]
+guilds[ ,2]
+guilds[7, ]
+guilds[guilds$chewer.2 > 0]
+guilds[guilds$chewer.2, > 0]
+guilds[guilds$chewer > 0, ]
+View(bw.venn)
+View(bw.venn)
+grid.arrange(
+top = "All",
+plotVenn(bw.venn[, -c(1:3)], bw.venn$Host, "Overall"),
+plotVenn(bw.venn[, 4:(bw.venn.ant_colmns[1] - 1)], bw.venn$Host, "Coleoptera"),
+plotVenn(bw.venn[, bw.venn.ant_colmns[1]:bw.venn.ant_colmns[length(bw.venn.ant_colmns)]], bw.venn$Host, "Ants"),
+plotVenn(bw.venn[, (bw.venn.ant_colmns[length(bw.venn.ant_colmns)] + 1):length(names(bw.venn))], bw.venn$Host, "Hemiptera")
+)
+#library(gplots)
+library(VennDiagram)
+require(gridExtra)
+grid.arrange(
+top = "All",
+plotVenn(bw.venn[, -c(1:3)], bw.venn$Host, "Overall"),
+plotVenn(bw.venn[, 4:(bw.venn.ant_colmns[1] - 1)], bw.venn$Host, "Coleoptera"),
+plotVenn(bw.venn[, bw.venn.ant_colmns[1]:bw.venn.ant_colmns[length(bw.venn.ant_colmns)]], bw.venn$Host, "Ants"),
+plotVenn(bw.venn[, (bw.venn.ant_colmns[length(bw.venn.ant_colmns)] + 1):length(names(bw.venn))], bw.venn$Host, "Hemiptera")
+)
+View(bw.venn)
+View(bw.venn)
+View(bw.venn)
+View(bw.venn)
+split(bw.venn, bw.venn$Host)
+View(split(bw.venn, bw.venn$Host))
+split(bw.venn[, -c(1:3)], bw.venn$Host)
+lapply(split(bw.venn[, -c(1:3)], bw.venn$Host), function(x) names(x)[colSums(x) > 0])
+View(lapply(split(bw.venn[, -c(1:3)], bw.venn$Host), function(x) names(x)[colSums(x) > 0]))
+lapply(split(bw.venn[, -c(1:3)], bw.venn$Host), function(x) names(x)[colSums(x) > 0])
+View(bw.venn.adjacent.nosingledoubletons[, bw.venn.ant_colmns.nosingledoubletons[1]:bw.venn.ant_colmns.nosingledoubletons[length(bw.venn.ant_colmns.nosingledoubletons)]])
+bw.venn.ant_colmns.nosingledoubletons
+grepl("Formicidae",names(bw.venn.nosingledoubletons))
+grep("Formicidae",names(bw.venn.nosingledoubletons))
+which(grepl("Formicidae",names(bw.venn.nosingledoubletons)))
+names(bw.venn.nosingledoubletons)[which(grepl("Formicidae",names(bw.venn.nosingledoubletons)))]
+View(bw.venn.nosingledoubletons[which(grepl("Formicidae",names(bw.venn.nosingledoubletons)))])
+length(which(grepl("Formicidae",names(bw.venn.nosingledoubletons))))
+View(bw_vs_all.nosingledoubletons)
+grep("Formicidae", bw_vs_all.nosingledoubletons)
+grep("Formicidae", names(bw_vs_all.nosingledoubletons))
+length(grep("Formicidae", names(bw_vs_all.nosingledoubletons)))
+bw_vs_all.speciescolumns.nosingledoubletons
+View(bw_vs_all)
+length(bw_vs_all.speciescolumns.nosingledoubletons)
+bw_vs_all.speciescolumns
+bw_vs_all.speciescolumns <- bw_vs_all[,4:length(bw_vs_all)]
+bw_vs_all.speciescolumns.nosingledoubletons <- bw_vs_all.speciescolumns[!apply(bw_vs_all.speciescolumns, 2, function(col) { length(col[col > 0]) <= 1 })]
+bw_vs_adjacent_all <- bw_vs_all
+bw_vs_adjacent_all$Host <- as.character(bw_vs_adjacent_all$Host)
+bw_vs_adjacent_all$Host[
+grepl("KZN[23]|MP[34]", bw_vs_adjacent_all$Sample) &
+bw_vs_adjacent_all$Host == "A_mearnsii"
+] <- "A_mearnsii (adjacent)"
+bw_vs_adjacent_all$Host = factor(
+bw_vs_adjacent_all$Host,
+# reorder factor levels, ensuring that A_mearnsii (adjacent) is last
+levels = c("A_mearnsii", "A_sieberiana", "A_mearnsii (adjacent)")
+)
+bw_vs_all.nosingledoubletons <- cbind(bw_vs_all[,1:3], bw_vs_all.speciescolumns.nosingledoubletons)
+bw_vs_adjacent_all.nosingledoubletons <- cbind(bw_vs_adjacent_all[,1:3], bw_vs_all.speciescolumns.nosingledoubletons)
+rm(bw_vs_all.speciescolumns)
+rm(bw_vs_all.speciescolumns.nosingledoubletons)
+length(grep("Formicidae", names(bw_vs_all.nosingledoubletons)))
+bw_vs_all.speciescolumns <- bw_vs_all[,4:length(bw_vs_all)]
+bw_vs_all.speciescolumns.nosingledoubletons <- bw_vs_all.speciescolumns[!apply(bw_vs_all.speciescolumns, 2, function(col) { length(col[col > 0]) <= 1 })]
+length(grep("Formicidae", names(bw_vs_all.speciescolumns.nosingledoubletons)))
+length(grep("Formicidae", names(bw_vs_all.speciescolumns)))
+!apply(bw_vs_all.speciescolumns, 2, function(col) { length(col[col > 0]) <= 1 })
+sum(bw_vs_all.speciescolumns$Formicidae_Formicinae_Camponotus_sp5)
+?apply
+colSums(guilds) > 0
+apply(bw_vs_all.speciescolumns, 2, function(col) { length(col[col > 0]) <= 1 })
+bw_vs_all.speciescolumns[apply(bw_vs_all.speciescolumns, 2, function(col) { length(col[col > 0]) <= 1 })]
+names(bw_vs_all.speciescolumns[apply(bw_vs_all.speciescolumns, 2, function(col) { length(col[col > 0]) <= 1 })])
+View(bw_vs)
+View(bw_vs_all)
+library(iNEXT)
+.prepareAcaciaData <- function(x) {
+# combine first 3 columns with presence/absence result
+out <- cbind(x[,1:3], .pa(x))
+# only A_mearsii
+out <- out[out$Host == 'A_mearnsii',]
+# set the rownames to MP1_F1_Summer, etc...
+rownames(out) <- do.call(paste, c(out[c("Sample", "Season")], sep = "_"))
+# create a new Site column containing just the site extracted from the Sample column
+out$Site <- unlist(lapply(strsplit(as.character(out$Sample), "\\_"), "[[", 1))
+# remove Host, Sample & Season columns
+out <- subset(out, select = -c(Host, Sample, Season))
+# combine number of rows and sum, per site
+out <- cbind(SampleUnit = aggregate(. ~ Site, out, length)[,2], aggregate(. ~ Site, out, sum))
+# set rownames to Site
+rownames(out) <- out$Site
+# drop the Site column
+out <- subset(out, select =-Site)
+out
+}
+bw_sample <- .prepareAcaciaData(bw_vs_all)
+View(bw_sample)
+View(bw_vs_all)
