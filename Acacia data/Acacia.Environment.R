@@ -187,6 +187,9 @@ bw_vs_adjacent_all$Host = factor(
   levels = c("A_mearnsii", "A_sieberiana", "A_mearnsii (adjacent)")
 )
 
+with(bw_vs_all, table(Host))
+
+
 bw_vs_all.nosingledoubletons <- cbind(bw_vs_all[,1:3], bw_vs_all.speciescolumns.nosingledoubletons)
 bw_vs_adjacent_all.nosingledoubletons <- cbind(bw_vs_adjacent_all[,1:3], bw_vs_all.speciescolumns.nosingledoubletons)
 rm(bw_vs_all.speciescolumns)

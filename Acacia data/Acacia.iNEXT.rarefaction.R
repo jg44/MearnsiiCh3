@@ -119,7 +119,50 @@ plotExpectedDiversity(bw_vs_site_host.iNEXT.enoughtrees.winter.7, 7, q = 0, sub 
 par(.pardefault)
 dev.off()
 
+###############
+###
+###############
 
+
+
+
+ #undebug(ggiNEXT)
+
+pdf("Output/RAREFACTION LEGEND COPY.pdf", width = 20, height = 7, useDingbats = F)
+ggiNEXT(bw_vs_host.iNEXT3, type=1, facet.var="order") + labs(x="Sampled tree count", y="Morphospecies diversity") + theme_bw(base_size = 24) + 
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
+  theme(legend.position = c(0.88, 0.60)) + 
+ theme(legend.text = element_text(face = 3)) +
+  theme(legend.key.width = unit(1.5, "line"), legend.key.height = unit(1.5, "line")) +
+  theme(legend.background = element_rect(color = 'black', size=.7, fill = 'white', linetype='solid')) 
+dev.off()
+browseURL("Output/RAREFACTION LEGEND COPY.pdf")
+
+
+pdf("Output/BW_VS Rarefaction By Host_all three.pdf", width = 20, height = 7, useDingbats = F)
+ggiNEXT(bw_vs_host.iNEXT3, type=1, facet.var="order") + labs(x="Sampled tree count", y="Morphospecies diversity") + theme_bw(base_size = 24) + 
+  theme(legend.position = "none")
+  # theme(legend.position = c(0.88, 0.66)) + 
+  # theme(legend.key.width = unit(2, "line"), legend.key.height = unit(2, "line")) +
+  # theme(legend.background = element_rect(color = 'black', size=.7, fill = 'white', linetype='solid')) 
+dev.off()
+browseURL("Output/BW_VS Rarefaction By Host_all three.pdf")
+browseURL("Output/")
+
+pdf("Output/BW_VS Rarefaction By Host_all four_LEGEND.pdf", width = 20, height = 7, useDingbats = F)
+ggiNEXT(bw_vs_host.iNEXT4, type=1, facet.var="order") + labs(x="Sampled tree count", y="Morphospecies diversity") + theme_bw(base_size = 24) + 
+ # theme(legend.position = "none")
+ theme(legend.position = c(0.88, 0.66)) + 
+ theme(legend.key.width = unit(2, "line"), legend.key.height = unit(2, "line")) +
+ theme(legend.background = element_rect(color = 'black', size=.7, fill = 'white', linetype='solid')) +
+ theme(legend.text = element_text(face = 3)) 
+dev.off()
+browseURL("Output/BW_VS Rarefaction By Host_all four_LEGEND.pdf")
+browseURL("Output/")
+
+    
+    
+    
 pdf("Output/BW_VS Rarefaction By Host.pdf", width = 20, height = 7, useDingbats = F)
 ggiNEXT(bw_vs_host.iNEXT, type=1, facet.var="order") + labs(x="Number of trees") + theme_bw(base_size = 18)
 dev.off()
@@ -179,6 +222,7 @@ grid.arrange(
   ggiNEXT(host_season_taxa.iNEXT$vs_hemiptera_winter, type=1, facet.var="order", se = F) + labs(x="", y = "") + theme_bw(base_size = 18) + guides(linetype = FALSE) + host_season_taxa.iNEXT.palette
 )
 dev.off()
+
 pdf("Output/BW_VS Rarefaction Season.pdf", width = 20, height = 10, useDingbats = F)
 grid.arrange(
   ncol = 3,
@@ -207,19 +251,22 @@ grid.arrange(
 dev.off()
 
 
-pdf("Output/BW_VS Rarefaction Region Season all three.pdf", width = 20, height = 10, useDingbats = F)
+xl <- 75; yl <- 175
+pdf("Output/BW_VS Rarefaction Region Season all three.pdf", width = 15, height = 10, useDingbats = F)
 grid.arrange(
   ncol = 3,
-  top = "Region, Season",
-  left = "Morphospecies richness",
-  ggiNEXT(region_season.iNEXT$KZN_summer, type=1, facet.var="order") + labs(x="", y = "KZN", title = "Summer") + theme_bw(base_size = 18) + guides(linetype = FALSE) + expand_limits(x = 100, y = 200),
-  ggiNEXT(region_season.iNEXT$KZN_spring, type=1, facet.var="order") + labs(x="", y = "", title = "Spring") + theme_bw(base_size = 18) + guides(linetype = FALSE) + expand_limits(x = 100, y = 200),
-  ggiNEXT(region_season.iNEXT$KZN_winter, type=1, facet.var="order") + labs(x="", y = "", title = "Winter") + theme_bw(base_size = 18) + guides(linetype = FALSE) + expand_limits(x = 100, y = 200),
-  ggiNEXT(region_season.iNEXT$MP_summer, type=1, facet.var="order") + labs(x="", y = "MP") + theme_bw(base_size = 18) + guides(linetype = FALSE) + expand_limits(x = 100, y = 200),
-  ggiNEXT(region_season.iNEXT$MP_spring, type=1, facet.var="order") + labs(x="Number of trees", y = "") + theme_bw(base_size = 18) + guides(linetype = FALSE) + expand_limits(x = 100, y = 200),
-  ggiNEXT(region_season.iNEXT$MP_winter, type=1, facet.var="order") + labs(x="", y = "") + theme_bw(base_size = 18) + guides(linetype = FALSE) + expand_limits(x = 100, y = 200)
+  top = textGrob("Region, Season", gp=gpar(fontsize=25,font=8)), 
+  left = textGrob("         Morphospecies richness", gp=gpar(fontsize=28,font=8), rot=90),
+ # bottom = textGrob("Sampled tree count", gp=gpar(fontsize=25,font=8), vjust=-.8), 
+  ggiNEXT(region_season.iNEXT3$KZN_summer, type=1, facet.var="order") + labs(x="", y = "KwaZulu-Natal", title = "Summer") + theme_bw(base_size = 18) + guides(linetype = FALSE) + expand_limits(x = xl, y = yl) + theme(legend.position="none") + theme(axis.title.x = element_text(size=26)),
+  ggiNEXT(region_season.iNEXT3$KZN_spring, type=1, facet.var="order") + labs(x="", y = "", title = "Spring") + theme_bw(base_size = 18) + guides(linetype = FALSE) + expand_limits(x = xl, y = yl) + theme(legend.position="none") + theme(axis.title.x = element_text(size=26)),
+  ggiNEXT(region_season.iNEXT3$KZN_winter, type=1, facet.var="order") + labs(x="", y = "", title = "Winter") + theme_bw(base_size = 18) + guides(linetype = FALSE) + expand_limits(x = xl, y = yl) + theme(legend.position="none") + theme(axis.title = element_text(size=26)),
+  ggiNEXT(region_season.iNEXT3$MP_summer, type=1, facet.var="order") + labs(x="", y = "Mpumalanga") + theme_bw(base_size = 18) + guides(linetype = FALSE) + expand_limits(x = xl, y = yl) + theme(legend.position="none") + theme(axis.title.x = element_text(size=26)),
+  ggiNEXT(region_season.iNEXT3$MP_spring, type=1, facet.var="order") + labs(x="Sampled tree count", y = "") + theme_bw(base_size = 18) + guides(linetype = FALSE) + expand_limits(x = xl, y = yl) + theme(legend.position="none") + theme(axis.title = element_text(size=26)),
+  ggiNEXT(region_season.iNEXT3$MP_winter, type=1, facet.var="order") + labs(x="", y = "") + theme_bw(base_size = 18) + guides(linetype = FALSE) + expand_limits(x = xl, y = yl) + theme(legend.position="none") + theme(axis.title = element_text(size=26))
 )
 dev.off()
+browseURL("Output/BW_VS Rarefaction Region Season all three.pdf")
 
 
 
@@ -235,4 +282,22 @@ grid.arrange(
 dev.off()
 
 #ggiNEXT(bw_vs.bytree.iNEXT, type=1, facet.var="order")
+
+
+.bu("/Users/jrg1035/Dropbox/R/myfunctions/functionlist.r")
+.devpdf()
+
+x11(width = 20, height = 7)
+.devpdf("killt",  png=TRUE)
+ggiNEXT(bw_vs_host.iNEXT3, type=1, facet.var="order") + labs(x="Sampled tree count", y="Morphospecies diversity") + theme_bw(base_size = 24) + 
+  theme(legend.position = "none")
+# theme(legend.position = c(0.88, 0.66)) + 
+# theme(legend.key.width = unit(2, "line"), legend.key.height = unit(2, "line")) +
+# theme(legend.background = element_rect(color = 'black', size=.7, fill = 'white', linetype='solid')) 
+dev.off()
+browseURL("Output/BW_VS Rarefaction By Host_all three.pdf")
+browseURL("Output/")
+
+.pdf2png("./graphs/BW_VS Rarefaction By Host_all four.pdf")
+.pdf2png("./graphs/BW_VS_Adj Morphospecies by family host.pdf")
 
