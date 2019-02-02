@@ -1,0 +1,15 @@
+.addtoFinalFigures <- function(file, wd=NULL){
+  if is.null(wd) wd<- "./graphs/"
+  ## Figure 2
+  
+  
+  ![image](./graphs/BW_VS Rarefaction By Host_all four.png)
+  *Figure 2. Sample-based rarefactions and extrapolations of insects collected from Vachellia sieberiana and Acacia mearnsii. q = 0 corresponds to species richness, q = 1 to the exponential of Shannon diversity and q = 2 to Inverse Simpson diversity (Chao et al., 2015). 95% confidence intervals were calculated by a bootstrap method based on 10 000 iterations. Solid and dashed portions of curves correspond to interpolated and extrapolated richness respectively.*
+    
+    [./graphs/BW_VS Rarefaction By Host_all four.pdf](./graphs/BW_VS Rarefaction By Host_all four.pdf)
+  
+}
+
+sink("outfile.txt")
+.auths
+
