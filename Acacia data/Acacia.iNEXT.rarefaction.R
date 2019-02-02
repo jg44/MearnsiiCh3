@@ -3,7 +3,7 @@ library(ggplot2)
 library(grid)
 library(gridExtra)
 
-
+.bu(getwd())
 
 
 png("Output/BW Rarefaction All.png", width=1300, height=600)
